@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box; 
+}  
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: #e3f2fd;
+    position: relative;
+}
+.book {
+    position: absolute;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0%);
+    width: 967px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 55px 0px rgba(181, 220, 248, 0.7);
+    margin: 0;
+    padding-top: 60px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+.book::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.book-img-wrapper { 
+    float: left;
+    height: 100%;
+    width: 371px;
+    height: auto;
+}
+.book-img {
+    vertical-align: top;
+    max-width: 100%;
+}
+.book-content-wrapper {
+    float: right;
+    height: 100%;
+    width: 426px;
+    padding-top: 8px;
+}
+.litle-title {
+    margin-bottom: 6px;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(191, 197, 200);
+}
+.book-title {
+    margin-bottom: 20px;
+    font-family: 'Noto Serif', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: rgb(1, 164, 189);
+    line-height: 1.24;
+}
+.text {
+    font-family:'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(108, 117, 127);
+    line-height: 1.65;
+    margin-bottom: 15px;
+}
+.text p {
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.book-details-wrapper {
+    margin-bottom: 22px;   
+}
+.details {
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(191, 197, 200);
+    font-weight: bold;
+    margin: 0;
+}
+.price {
+    font-size: 28px;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 0.10em;
+}    
+.batton-buy {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(226, 1, 59);
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
